@@ -8,4 +8,4 @@ spec:
   paths:
   - fleet-examples/simple
   - charts/webserver
-  branch: lindhe/containers
+  branch: master
