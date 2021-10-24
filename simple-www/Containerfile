@@ -1,0 +1,2 @@
+FROM docker.io/nginx:1.21.3-alpine
+COPY www/* /usr/share/nginx/html
