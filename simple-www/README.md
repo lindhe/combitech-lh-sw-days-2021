@@ -9,6 +9,8 @@ Using `podman` instead of `docker` is cool.
 You want to be cool.
 They use pretty much the same syntax, just slightly different defaults from a user's perspective.
 
+### Using Podman
+
 ```console
 $ podman build -t docker.io/lindhe/simple-www:red-0.1.0 .
 STEP 1/2: FROM docker.io/nginx:1.21.3-alpine
@@ -19,6 +21,28 @@ COMMIT docker.io/lindhe/simple-www:red-0.1.0
 Successfully tagged docker.io/lindhe/simple-www:red-0.1.0
 Successfully tagged localhost/www:latest
 47e4e7b115091dc22fd0ba49885c026df3721102ee61a073acf029edf90f35c7
+```
+
+### Using Docker
+
+```console
+$ docker build -f Containerfile -t docker.io/lindhe/simple-www:red-0.1.0 .
+Sending build context to Docker daemon  6.656kB
+Step 1/2 : FROM docker.io/nginx:1.21.3-alpine
+1.21.3-alpine: Pulling from library/nginx
+a0d0a0d46f8b: Pull complete
+4dd4efe90939: Pull complete
+c1368e94e1ec: Pull complete
+3e72c40d0ff4: Pull complete
+969825a5ca61: Pull complete
+61074acc7dd2: Pull complete
+Digest: sha256:1ff1364a1c4332341fc0a854820f1d50e90e11bb0b93eb53b47dc5e10c680116
+Status: Downloaded newer image for nginx:1.21.3-alpine
+ ---> 513f9a9d8748
+Step 2/2 : COPY www/* /usr/share/nginx/html
+ ---> 125abc7b1f83
+Successfully built 125abc7b1f83
+Successfully tagged lindhe/simple-www:red-0.1.0
 ```
 
 ## Push
