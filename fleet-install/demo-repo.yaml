@@ -7,3 +7,5 @@ spec:
   repo: "https://github.com/lindhe/combitech-lh-sw-days-2021"
   paths:
   - fleet-examples/simple
+  - charts/webserver
+  branch: lindhe/containers
