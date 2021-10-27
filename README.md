@@ -15,3 +15,4 @@ Here's the most important commands to have running during the demo:
 
 * `watch -d kubectl --context ls-sw-days-1-admin -n fleet-local get fleet`
 * `watch kubectl --context ls-sw-days-1-admin get pods,svc,deploy -n www`
+* `kubectl -n www port-forward service/combitech-lh-sw-days-2021-charts-webserver 8080:80`
