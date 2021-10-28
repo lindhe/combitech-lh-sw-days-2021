@@ -7,5 +7,5 @@ spec:
   repo: "https://github.com/lindhe/combitech-lh-sw-days-2021"
   paths:
   - charts/webserver
-  branch: master
+  branch: ingressctl
   targetNamespace: www
